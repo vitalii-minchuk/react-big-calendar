@@ -1,12 +1,12 @@
-
+import React from 'react';
 
 const App: React.FC = () => {
 
   return (
     <div>
-hello
+      hello
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
