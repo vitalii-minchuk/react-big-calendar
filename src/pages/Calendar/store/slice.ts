@@ -1,7 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 // import { PayloadError } from '../../../common/types';
 // import { CalendarPeriod, CalendarEventsResponse } from '../types';
-
 // interface InitialState {
 // 	loading: boolean;
 // 	events: CalendarEventsResponse[];
