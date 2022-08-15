@@ -12,7 +12,6 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 // 	events: [],
 // 	// errors: [],
 // };
-
 // const calendarReducer = createSlice({
 // 	name: 'calendar',
 // 	initialState,
