@@ -38,7 +38,7 @@ export const BigCalendar = React.forwardRef<Calendar, ICalendarProps>(
 										events={events}
 										localizer={localizer}
 										style={{height: 500}}
-										/>
+										/>					
         </StyleWrapper>
 			</Box>
 		);
