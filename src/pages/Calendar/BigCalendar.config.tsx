@@ -12,8 +12,8 @@ import {
 	fullcalendarEvent,
 	CalendarEventsResponse,
 } from './types';
-import dayjs from 'dayjs';
-import { theme } from '../../common/theme';
+// import dayjs from 'dayjs';
+// import { theme } from '../../common/theme';
 
 
 export const StyleWrapper = styled.div<{
@@ -29,7 +29,7 @@ const locales = {
   'en-US': enUS,
 }
 
-const localizer = dateFnsLocalizer({
+export const localizer = dateFnsLocalizer({
   format,
   parse,
   startOfWeek,

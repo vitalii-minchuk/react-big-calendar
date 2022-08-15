@@ -5,14 +5,14 @@ import {
 	Tabs,
 	useDisclosure,
 } from '@chakra-ui/react';
-import {
-	CalendarConfig, StyleWrapper,
-} from './Calendar.config';
+import {localizer, StyleWrapper,
+} from './BigCalendar.config';
 import {
 	CalendarViewSwitchButton,
 	MonthViewDayCellContent,
 	RenderEventContent,
 } from './components';
+import { Calendar, Views, DateLocalizer } from 'react-big-calendar'
 // import { CalendarEvents } from '../../common/modals';
 // import dayjs from 'dayjs';
 
@@ -24,17 +24,21 @@ interface ICalendarProps {
 	// 	period: CalendarPeriod;
 	// }) => void;
 	// loading: boolean;
-	// events: CalendarEventsResponse[];
+	events: any;
 }
 
-export const Calendar = React.forwardRef<ReactBigCalendar, ICalendarProps>(
-	({ changeCalendarView, onDatesSet, events, loading }, ref) => {
+export const BigCalendar = React.forwardRef<Calendar, ICalendarProps>(
+	({ events }, ref) => {
 		const { isOpen, onOpen, onClose } = useDisclosure();
 
 		return (
 			<Box>
         <StyleWrapper>
-
+					<Calendar 
+										events={events}
+										localizer={localizer}
+										style={{height: 500}}
+										/>
         </StyleWrapper>
 			</Box>
 		);

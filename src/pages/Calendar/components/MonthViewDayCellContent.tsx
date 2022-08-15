@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Box, Center, Text, chakra, useDisclosure } from '@chakra-ui/react';
 import dayjs from 'dayjs';
 import { theme } from '../../../common/theme';
-import { MockEvents } from '../Calendar';
+import { MockEvents } from '../BigCalendar';
 import { CalendarEvents } from '../../../common/modals';
 
 export const MonthViewDayCellContent = date => {
